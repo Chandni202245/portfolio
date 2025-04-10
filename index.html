@@ -1,0 +1,124 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chandni Kumari | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Chandni Kumari</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Work Experience</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hi, I'm Chandni Kumari</h1>
+    <p>Computer Science Engineer | Data Enthusiast | Problem Solver</p>
+  </section>
+
+  <section id="about">
+    <div class="about-container">
+      <img src="images/profile.png" alt="Chandni Kumari" />
+      <div>
+        <h2>About Me</h2>
+        <p>I am a passionate Computer Science Engineering student with a focus on Data Analytics, Machine Learning, and Web Development. Proficient in C++, Python, JavaScript, R, and more. I love solving problems and building solutions that make an impact!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Work Experience & Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Predicting Diabetes Using Machine Learning Models</h3>
+        <p>Built predictive models to forecast diabetes outcomes using patient data, improving early detection and healthcare decision-making.</p>
+        <a href="https://github.com/Chandni202245/Predicting-Diabetes-Using-Machine-Learning-Models" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Dragon Real Estates Price Prediction</h3>
+        <p>Developed models to predict real estate prices based on location, size, and amenities, helping buyers and investors make informed decisions.</p>
+        <a href="https://github.com/Chandni202245/ML-project" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Global Superstore Sales Analysis Using Tableau</h3>
+        <p>Performed data analysis and created visual dashboards to uncover sales trends, high-performing products, and regional insights.</p>
+      </div>
+      <div class="project">
+        <h3>COVID-19 Data Analysis Dashboard (India)</h3>
+        <p>Designed an interactive dashboard to visualize COVID-19 trends across India, aiding in tracking active cases, discharges, and fatalities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificates-grid">
+      <div class="certificate">
+        <img src="images/certificate1.png" alt="Generative AI" onclick="enlargeImage(this)">
+        <h3>Geodata Processing using Python and Machine Learning</h3>
+        <p>ISRO | Mar 2025</p>
+        <a href="https://drive.google.com/file/d/1xoYzH-xuTuP5Dq3w_Ae8fmXRDi5s4NG6/view?usp=sharing" download>Download</a>
+      </div>
+      <div class="certificate">
+        <img src="images/certificate2.png" alt="Cloud Computing" onclick="enlargeImage(this)">
+        <h3>Cloud Computing</h3>
+        <p>NPTEL | Mar 2024 – May 2024</p>
+        <a href="https://drive.google.com/file/d/19RJQYgFRXQ8SV4TE3cBOOLp6CwC_Ca0u/view?usp=sharing" download>Download</a>
+      </div>
+      <div class="certificate">
+        <img src="images/certificate3.png" alt="OOPs" onclick="enlargeImage(this)">
+        <h3>Object Oriented Programming in C++</h3>
+        <p>LPU | Jun 2024 – Jul 2024</p>
+        <a href="https://drive.google.com/file/d/1VTFVJHSsiNKXgnfqmq9jzk67KNnvho1j/view?usp=sharing" download>Download</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Download my complete resume:</p>
+    <a href="ChandniResumeFinal.pdf" download style="display: inline-block; margin-top: 15px;">Download Resume</a>
+  </section>
+  
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/ck623324@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/chandni-kumari-/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="mailto:ck623324@gmail.com">
+        <i class="fas fa-envelope"></i> Gmail
+      </a>
+      <a href="https://github.com/Chandni202245" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+    
+  </section>
+  
+
+  <div class="enlarged-image-container" onclick="closeImage()">
+    <img id="enlargedImage" src="" alt="Enlarged Certificate"/>
+  </div>
+
+</body>
+</html>
